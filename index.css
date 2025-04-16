@@ -1,0 +1,66 @@
+body {
+    padding-top: 80px; /* adjust if your navbar is taller */
+    background:url(assets/images/web\ background.png); /* optional dark background */
+    color: #fff;
+  }
+
+  .custom-box {
+    background: url(assets/images/champions\ league\ background.webp);
+    border: 2px solid white;
+    color: white;
+    padding: 12px;
+    height: 100px;
+    width: 100%; /* Make it full width on smaller screens */
+    max-width: 40%; /* Limits width on larger screens */
+    box-sizing: border-box;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* Make boxes smaller on mobile devices */
+@media (max-width: 768px) {
+    .custom-box {
+        height: auto; /* Reduce height */
+        padding: 8px; /* Reduce padding */
+        max-width: 30%; /* Increase width to fit mobile screens */
+        font-size: 10px; /* Reduce text size */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logos {
+        width: 10px; /* Reduce image size */
+        height: auto;
+    }
+}
+
+
+  .logo {
+    height: 100px;
+  }
+
+  select {
+    background: url(assets/images/web\ background.png);
+    border: none;
+    color: blue;
+  }
+
+  .navbar-custom {
+    background-color: url(assets/images/web\ background.png);
+    
+  }
+
+  .logos{
+    width: 16px;
+  }
+  .background{
+    background-image: url(assets/images/neww.webp);
+    width: 100%;
+    height: 700px;
+  }
