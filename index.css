@@ -1,88 +1,29 @@
-body {
-    padding-top: 80px; /* adjust if your navbar is taller */
-    background:url(assets/images/champions\ league\ background.webp); /* optional dark background */
-    color: #fff;
-     margin: 0;
-     overflow-x: hidden;
-  }
-
-  .custom-box {
-    background: url(assets/images/champions\ league\ background.webp);
-    border: 2px solid white;
-    color: white;
-    padding: 12px;
-    height: 100px;
-    width: 100%;
-    max-width: 50%; 
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 12px;
+body{
+  background: url(assets/images/web\ background.png);
+  color: white;
 }
-.main-box{
-  
+.nav-link{
+  color: white;
+}
+.navbar{
+  background: url(assets/images/web\ background.png);
+}
+#game{
+  background: url(assets/images/web\ background.png);
+}
+.navbar-brand img {
+  width: 150px;
+  height: auto;
 }
 
 @media (max-width: 768px) {
-    .custom-box {
-        height: auto; 
-        max-width: 50%; 
-        font-size: 10px; 
-        display: flex;
-        margin-left: 120px;
-        flex-direction: column;
-    }
-
-    .logos {
-        width: 10px; /* Reduce image size */
-        height: auto;
-    }
-
-    .main-box{
-      margin-left: 100px;
-    }
-}
-
-@media (max-width: 320px) {
-
-  .main-box{
-    margin: 0;
+  .navbar-brand img {
+      width: 100px; /* Shrinks logo on smaller screens */
   }
 }
 
-  .logo {
-    height: 100px;
+@media (max-width: 480px) {
+  .navbar-brand img {
+      width: 80px; /* Further reduces size for very small screens */
   }
-
-  select {
-    background: url(assets/images/web\ background.png);
-    border: none;
-    color: blue;
-  }
-
-  .navbar-custom {
-    background-color: url(assets/images/web\ background.png);
-    
-  }
-
-  .logos{
-    width: 16px;
-  }
-  /* .box {
-    height: 150px;
-    border-radius: 8px;
-  }
-
-  .box1 {
-    background-color: #4CAF50;
-  }
-
-  .box2 {
-    background-color: #2196F3;
-  } */
- 
-
-
+}
