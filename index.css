@@ -1,15 +1,26 @@
 body{
-  background: url(assets/images/web\ background.png);
+  background: #010c78;
   color: white;
+}
+.container-fluid{
+  background-color: #010c78;
 }
 .nav-link{
   color: white;
 }
 .navbar{
-  background: url(assets/images/web\ background.png);
+  background-color: #010c78;
+  padding: 0;
 }
 #game{
   background: url(assets/images/web\ background.png);
+
+
+  @media (max-width:768px) {
+    #game{
+      font-size: 10px;
+    }
+  }
 }
 .navbar-brand img {
   width: 150px;
@@ -18,12 +29,62 @@ body{
 
 @media (max-width: 768px) {
   .navbar-brand img {
-      width: 100px; /* Shrinks logo on smaller screens */
+      width: 100px; 
   }
 }
 
 @media (max-width: 480px) {
   .navbar-brand img {
-      width: 80px; /* Further reduces size for very small screens */
+      width: 80px; 
   }
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 75%;
+  margin: 40px auto;
+  flex-wrap: wrap;
+}
+
+.box {
+  flex: 1;
+  height: 100px;
+  border: 2px solid white;
+  background: url(assets/images/web\ background.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 10px;
+  margin: 40px;
+}
+@media (max-width: 768px) {
+  .container {
+      width: 60%; 
+      justify-content: center; 
+      height: 30%;
+  }
+
+  .box {
+      flex: 1 1 22%;
+      height: 60px; 
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .box {
+      flex: 1 1 45%; 
+      height: 40px;
+  }
+}
+
+@media (max-width:375px) {
+  .box{
+    flex: 1 1 22%;
+  }
+}
+.logo{
+  width: 30px;
 }
