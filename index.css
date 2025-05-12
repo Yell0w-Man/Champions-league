@@ -11,6 +11,7 @@ body{
 .navbar{
   background-color: #010c78;
   padding: 0;
+  
 }
 #game{
   background: url(assets/images/web\ background.png);
@@ -45,11 +46,12 @@ body{
   width: 75%;
   margin: 40px auto;
   flex-wrap: wrap;
+  margin-top: 100px;
 }
 
 .box {
   flex: 1;
-  height: 100px;
+  height: auto;
   border: 2px solid white;
   background: url(assets/images/web\ background.png);
   display: flex;
@@ -57,34 +59,22 @@ body{
   align-items: center;
   text-align: center;
   font-size: 10px;
-  margin: 40px;
+  margin-top: 30px;
 }
 @media (max-width: 768px) {
-  .container {
-      width: 60%; 
-      justify-content: center; 
-      height: 30%;
-  }
-
   .box {
-      flex: 1 1 22%;
-      height: 60px; 
-      font-size: 14px;
+    width: auto; 
+    font-size: 10px;
   }
 }
 
 @media (max-width: 480px) {
   .box {
-      flex: 1 1 45%; 
-      height: auto;
+    width: 100%; 
   }
+
 }
 
-@media (max-width:375px) {
-  .box{
-    flex: 1 1 22%;
-  }
-}
 .logo{
   width: 50px;
 }
@@ -109,10 +99,42 @@ body{
 @media (max-width: 600px) {
   .holder {
       flex-direction: column;
-      height: 200px;
+      height: auto;
   }
 }
 .wallpaper{
   width: 100%;
-  height: auto;
+  height: 100%;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 10px; 
+}
+
+th, td {
+  padding: 10px; 
+  text-align: left;
+  font-size: 18px; 
+  
+}
+
+h4 {
+  margin-bottom: 10px; 
+}
+
+@media (max-width: 768px) {
+  th, td {
+    font-size: 14px;
+    
+  }
+}
+
+@media (max-width:480px) {
+  td,th{
+    font-size: 10px;
+    
+  }
 }
