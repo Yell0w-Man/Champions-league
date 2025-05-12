@@ -76,7 +76,7 @@ body{
 @media (max-width: 480px) {
   .box {
       flex: 1 1 45%; 
-      height: 40px;
+      height: auto;
   }
 }
 
@@ -86,5 +86,33 @@ body{
   }
 }
 .logo{
-  width: 30px;
+  width: 50px;
+}
+.holder {
+  display: flex;
+  gap: 10px;
+  margin: 20px;
+}
+.div1 {
+  flex: 2; 
+  background: url(assets/images/yannn.jpeg);
+  text-align: center;
+  height: auto;
+}
+.div2 {
+  flex: 1; 
+  background: url(assets/images/yannn.jpeg);
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .holder {
+      flex-direction: column;
+      height: 200px;
+  }
+}
+.wallpaper{
+  width: 100%;
+  height: auto;
 }
