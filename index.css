@@ -1,7 +1,17 @@
 body{
   background: #010c78;
   color: white;
+  font-family: Jack Sphinx;
 }
+
+
+  @font-face {
+    font-family: 'Jack Sphinx';
+    src: url('assets/images/jack_sphinx/Jack\ Sphinx.ttf') format('ttf'),
+  
+}
+
+
 .container-fluid{
   background-color: #010c78;
 }
@@ -52,19 +62,16 @@ body{
 .box {
   flex: 1;
   height: auto;
-  border: 2px solid white;
-  background: url(assets/images/web\ background.png);
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 10px;
   margin-top: 30px;
 }
 @media (max-width: 768px) {
   .box {
     width: auto; 
-    font-size: 10px;
+    font-size: 9px;
   }
 }
 
@@ -84,13 +91,13 @@ body{
   margin: 20px;
 }
 .div1 {
-  flex: 2; 
+  flex: 2;
   background: url(assets/images/yannn.jpeg);
   text-align: center;
   height: auto;
 }
 .div2 {
-  flex: 1; 
+  flex: 1;
   background: url(assets/images/yannn.jpeg);
   padding: 20px;
   text-align: center;
@@ -112,6 +119,7 @@ table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 10px; 
+  font-size: 12px;
 }
 
 th, td {
@@ -138,3 +146,26 @@ h4 {
     
   }
 }
+.carousel_image{
+  width: 35em !important;
+
+
+  @media (max-width:820px) {
+    .carousel_image{
+      width: 5em !important;
+    }
+  }
+
+  @media (max-width:768px) {
+    .carousel_image{
+      width: 5em !important;
+    }
+  }
+
+  @media (max-width:480px) {
+    .carousel_image{
+      width: 6em !important;
+    }
+  }
+}
+
